@@ -55,7 +55,7 @@ Agora sim podemos colocar o servidor para rodar:
 <hr>
 <h2 align="center">TUTORIAL PARA UTILIZAÇÃO DA API</h2>
 
-### É necessários autenticar-se para utilizar o Sistema, caso contrário não teremos acesso aos dados conforme mostra a imagem abaixo:
+### É necessários autenticar-se para utilizar o Sistema, caso contrário, não teremos acesso aos dados conforme mostra a imagem abaixo:
 
 ![image](https://user-images.githubusercontent.com/69816930/223211607-2bb2bc5b-7dd9-437e-9f94-0ad620740505.png)
 
@@ -105,22 +105,23 @@ role="start" id="responseLogin">
 
 <pre class="">
 {
-"acess_token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90YXNrYXBpLnRlY25vbG9naWEud3NcL2FwaVwvdjFcL2xvZ2luIiwiaWF0IjoxNjc4MDQ2NDUwLCJleHAiOjE2NzgwNjgwNTAsIm5iZiI6MTY3ODA0NjQ1MCwianRpIjoibWhmdEp1Tkx6MTdmc2k5WiIsInN1YiI6MSwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.jEtrLSM9EE7-aTAsPP-ax_S9Oh0eY8wgMLzbE7uF0_0",
-"token_type": "Bearer",
-"expires_in": 360,
-"user": {
-"id": 1,
-"name": "Administrador",
-"email": "administrador@taskapi.com",
-"email_verified_at": null,
-"created_at": null,
-"updated_at": null
-}
+    "acess_token":    "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90YXNrYXBpLnRlY25vbG9naWEud3NcL2FwaVwvdjFcL2xvZ2luIiwiaWF0IjoxNjc4MDQ2NDUwLCJleHAiOjE2NzgwNjgwNTAsIm5iZiI6MTY3ODA0NjQ1MCwianRpIjoibWhmdEp1Tkx6MTdmc2k5WiIsInN1YiI6MSwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.jEtrLSM9EE7-aTAsPP-ax_S9Oh0eY8wgMLzbE7uF0_0",
+    "token_type": "Bearer",
+    "expires_in": 360,
+    "user": {
+    "id": 1,
+    "name": "Administrador",
+    "email": "administrador@taskapi.com",
+    "email_verified_at": null,
+    "created_at": null,
+    "updated_at": null
+    }
 }</pre>
 
 </div>
 
 
+<p> Agora, com posse do Token de acesso, usaremos o mesmo para fazer as solicitações GET, POST, PUT e DELETE a seguir </p>
 
 
 <hr class="mb-5">
@@ -156,45 +157,45 @@ role="start" id="responseGetAll">
 
 <pre class="d-flex flex-end">
 {
-"message": "Todas as tarefas",
-"error": "false",
-"code": 200,
-"results": [
+    "message": "Todas as tarefas",
+    "error": "false",
+    "code": 200,
+    "results": [
 {
-"task_id": "1",
-"task_title": "Desenvolver uma Loja Virtual",
-"task_description": "Preciso desenvolver uma loja virtual para a empresa JOANNA MULTIMARCAS, usar Wordpress + Woocommerce e Hospedar.",
-"task_start_date": "2023-03-08 00:01:00",
-"task_end_date": "2023-03-22 23:59:59",
-"task_status": "1",
-"fk_task_id_user": "1"
+    "task_id": "1",
+    "task_title": "Desenvolver uma Loja Virtual",
+    "task_description": "Preciso desenvolver uma loja virtual para a empresa JOANNA MULTIMARCAS, usar Wordpress + Woocommerce e Hospedar.",
+    "task_start_date": "2023-03-08 00:01:00",
+    "task_end_date": "2023-03-22 23:59:59",
+    "task_status": "1",
+    "fk_task_id_user": "1"
 },
 {
-"task_id": "2",
-"task_title": "Levar o Carro para Lavar",
-"task_description": "No sábado, preciso levar o carro ao Lava Jato do Marquinho",
-"task_start_date": "2023-03-11 09:00:00",
-"task_end_date": "2023-03-11 12:00:00",
-"task_status": "1",
-"fk_task_id_user": "1"
+    "task_id": "2",
+    "task_title": "Levar o Carro para Lavar",
+    "task_description": "No sábado, preciso levar o carro ao Lava Jato do Marquinho",
+    "task_start_date": "2023-03-11 09:00:00",
+    "task_end_date": "2023-03-11 12:00:00",
+    "task_status": "1",
+    "fk_task_id_user": "1"
 },
 {
-"task_id": "3",
-"task_title": "Ir ao Mercado",
-"task_description": "Preciso ir ao mercado no domingo pela manhã e fazer as compras do mês",
-"task_start_date": "2023-03-12 08:00:00",
-"task_end_date": "2023-03-12 11:30:00",
-"task_status": "1",
-"fk_task_id_user": "1"
+    "task_id": "3",
+    "task_title": "Ir ao Mercado",
+    "task_description": "Preciso ir ao mercado no domingo pela manhã e fazer as compras do mês",
+    "task_start_date": "2023-03-12 08:00:00",
+    "task_end_date": "2023-03-12 11:30:00",
+    "task_status": "1",
+    "fk_task_id_user": "1"
 },
 {
-"task_id": "4",
-"task_title": "Finalizar meu TCC",
-"task_description": "Preciso retornar ao meu TCC",
-"task_start_date": "2023-03-13 18:00:00",
-"task_end_date": "2023-03-31 18:00:00",
-"task_status": "1",
-"fk_task_id_user": "1"
+    "task_id": "4",
+    "task_title": "Finalizar meu TCC",
+    "task_description": "Preciso retornar ao meu TCC",
+    "task_start_date": "2023-03-13 18:00:00",
+    "task_end_date": "2023-03-31 18:00:00",
+    "task_status": "1",
+    "fk_task_id_user": "1"
 }
 ]
 }
@@ -251,20 +252,20 @@ role="start" id="responseGetByID">
 
 <pre class="d-flex flex-end">
 {
-"message": "Detalhes da tarefa",
-"error": "false",
-"code": 200,
-"results": [
+    "message": "Detalhes da tarefa",
+    "error": "false",
+    "code": 200,
+    "results": [
 {
-"task_id": "1",
-"task_title": "Desenvolver uma Loja Virtual",
-"task_description": "Preciso desenvolver uma loja virtual para a empresa JOANNA MULTIMARCAS, usar Wordpress + Woocommerce e Hospedar.",
-"task_start_date": "2023-03-08 00:01:00",
-"task_end_date": "2023-03-22 23:59:59",
-"task_status": "1",
-"fk_task_id_user": "1"
-}
-]
+    "task_id": "1",
+    "task_title": "Desenvolver uma Loja Virtual",
+    "task_description": "Preciso desenvolver uma loja virtual para a empresa JOANNA MULTIMARCAS, usar Wordpress + Woocommerce e Hospedar.",
+    "task_start_date": "2023-03-08 00:01:00",
+    "task_end_date": "2023-03-22 23:59:59",
+    "task_status": "1",
+    "fk_task_id_user": "1"
+    }
+  ]
 }</pre>
 
 </div>
@@ -333,11 +334,11 @@ role="start" id="responseGetByID">
 
 <pre class="">
 {
-"task_title": "Criando Tarefa",
-"task_description": "criando descrição da tarefa",
-"task_start_date": "2023-03-25 23:45:12",
-"task_end_date": "2023-03-11 23:45:12",
-"fk_task_id_user": 1
+    "task_title": "Criando Tarefa",
+    "task_description": "criando descrição da tarefa",
+    "task_start_date": "2023-03-25 23:45:12",
+    "task_end_date": "2023-03-11 23:45:12",
+    "fk_task_id_user": 1
 }</pre>
 
 </div>
@@ -352,16 +353,16 @@ role="start" id="responseCreate">
 
 <pre class="">
 {
-"message": "Tarefa criada com sucesso",
-"error": "false",
-"code": 200,
-"results": {
-"task_title": "Criando Tarefa",
-"task_description": "criando a descrição da tarefa",
-"task_start_date": "2023-03-25 23:45:12",
-"task_end_date": "2023-03-11 23:45:12",
-"fk_task_id_user": 1
-}
+    "message": "Tarefa criada com sucesso",
+    "error": "false",
+    "code": 200,
+    "results": {
+    "task_title": "Criando Tarefa",
+    "task_description": "criando a descrição da tarefa",
+    "task_start_date": "2023-03-25 23:45:12",
+    "task_end_date": "2023-03-11 23:45:12",
+    "fk_task_id_user": 1
+    }
 }</pre>
 
 </div>
@@ -413,11 +414,11 @@ role="start" id="responseCreate">
 
 <pre class="">
 {
-"task_title": "Editando a Tarefa",
-"task_description": "Editando a descrição da tarefa",
-"task_start_date": "2023-03-25 23:45:12",
-"task_end_date": "2023-03-11 23:45:12",
-"fk_task_id_user": 1
+    "task_title": "Editando a Tarefa",
+    "task_description": "Editando a descrição da tarefa",
+    "task_start_date": "2023-03-25 23:45:12",
+    "task_end_date": "2023-03-11 23:45:12",
+    "fk_task_id_user": 1
 }</pre>
 
 </div>
@@ -432,16 +433,16 @@ role="start" id="responseUpdate">
 
 <pre class="">
 {
-"message": "Tarefa editada com sucesso",
-"error": "false",
-"code": 200,
-"results": {
-"task_title": "Editando a Tarefa",
-"task_description": "Editando a descrição da tarefa",
-"task_start_date": "2023-03-25 23:45:12",
-"task_end_date": "2023-03-11 23:45:12",
-"fk_task_id_user": 1
-}
+    "message": "Tarefa editada com sucesso",
+    "error": "false",
+    "code": 200,
+    "results": {
+    "task_title": "Editando a Tarefa",
+    "task_description": "Editando a descrição da tarefa",
+    "task_start_date": "2023-03-25 23:45:12",
+    "task_end_date": "2023-03-11 23:45:12",
+    "fk_task_id_user": 1
+    }
 }</pre>
 
 </div>
@@ -496,9 +497,9 @@ role="start" id="responseDelete">
 
 <pre class="">
 {
-"message": "Tarefa deletada com Sucesso",
-"error": "false",
-"code": 200
+    "message": "Tarefa deletada com Sucesso",
+    "error": "false",
+    "code": 200
 }</pre>
 
 </div>
