@@ -28,7 +28,7 @@ ou  caso esteja utilizando versões mais antigas utilize para atualizar.
 
 ```composer update```
 
-### CONFITURAR A ENV.
+### CONFIGURAR A ENV.
 
 Renomeie o arquivo .env.example para .env e edite os seguintes dados para:
 
